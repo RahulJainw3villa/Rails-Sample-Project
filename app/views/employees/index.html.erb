@@ -1,0 +1,30 @@
+<h1>Employee Data</h1>
+
+
+<div style=  "display:flex; box-sizing:border-box; padding: auto .5rem; border:1px solid black; width:500px; justify-content:space-around">
+<h3> Name</h3>
+<h3> Salary</h3>
+<h3> city</h3>
+</div>
+
+
+<% @employees.each do |emp| %>
+<div style = "display:flex; border:1px solid black; width:500px; justify-content:space-around; align-items:center">
+<div style="padding:1rem">
+<%= emp.name%>
+</div>
+<div style="padding:1rem">
+
+<%= emp.salary%>
+</div>
+
+<div style="padding:1rem">
+
+<%= emp.city%>
+</div>
+
+</div>
+<% end %>
+
+
+
